@@ -1,0 +1,25 @@
+paths:
+  listings: "data/listings.csv"
+  reviews: "data/reviews.csv"
+  output_report: "output/data_quality_report.json"
+  logs: "logs/pipeline_execution.log"
+  database: "airbnb.db"
+
+pipeline:
+  validate_null_threshold: 0.2   # porcentaje máximo de nulos aceptados
+  enable_quality_report: true
+
+database:
+  type: "sqlite"
+  sqlite_file: "airbnb.db"
+
+logging:
+  level: "INFO"
+  format: "[%(asctime)s] %(levelname)s - %(message)s"
+
+transform:
+  default_fill_values:
+    price: 0
+    number_of_reviews: 0
+    reviews_per_month: 0
+    calculated_host_listings_count: 0

@@ -1,0 +1,21 @@
+{
+    "listings": {
+        "missing_columns": [],
+        "duplicate_ids": 0,
+        "invalid_prices": 0
+    },
+    "reviews": {},
+    "integrity": {
+        "orphan_reviews": 0
+    },
+    "status": "WARNING",
+    "null_critical": {
+        "listings": {
+            "id": 0,
+            "host_id": 0,
+            "latitude": 0,
+            "longitude": 0,
+            "price": 14783
+        }
+    }
+}
